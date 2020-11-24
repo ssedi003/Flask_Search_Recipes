@@ -16,9 +16,9 @@ def search():
         and assign the return value to recipes"""
         recipes = forms.get_data(meal, include, exclude)
 
-        #accessing the list available in the json:
-        recipes=recipes
-        #print(recipes['videos'])
+        # accessing the list available in the json:
+
+        print(recipes[0]['title'])
 
         return render_template('recipes_results.html', form=search_form, meal=meal, include=include,
                                exclude=exclude, recipes=recipes)

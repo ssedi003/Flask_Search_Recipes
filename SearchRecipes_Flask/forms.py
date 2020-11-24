@@ -26,6 +26,6 @@ def get_data(meal, include, exclude):
     # hint: use main_functions
     search_results = main_functions.read_from_file("SearchRecipes_Flask/JSON_Files/response.json")
     
-    recipes = [search_results]
 
-    return recipes
+
+    return search_results["videos"]
